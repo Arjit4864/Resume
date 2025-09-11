@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arjit Singh - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .section-border {
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        a {
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gray-800">Arjit Singh</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#education" class="text-gray-600 hover:text-blue-600 transition-colors">Education</a>
+                    <a href="#achievements" class="text-gray-600 hover:text-blue-600 transition-colors">Achievements</a>
+                    <a href="#interests" class="text-gray-600 hover:text-blue-600 transition-colors">Interests</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600" id="mobile-menu-button" aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-white shadow-md z-40" aria-label="Mobile menu">
+            <div class="flex flex-col space-y-4 p-4 text-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-blue-600">Education</a>
+                <a href="#achievements" class="text-gray-600 hover:text-blue-600">Achievements</a>
+                <a href="#interests" class="text-gray-600 hover:text-blue-600">Interests</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="gradient-bg pt-24 pb-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img
+                            src="WhatsApp Image 2025-08-20 at 21.03.26_f019a11a.jpg"
+                            alt="Arjit Singh"
+                            class="w-64 h-64 rounded-full mx-auto md:mx-0 border-4 border-white shadow-xl object-cover"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left text-white">
+                        <h1 class="text-5xl font-bold mb-4">Arjit Singh</h1>
+                        <p class="text-xl text-blue-100 mb-8 max-w-xl mx-auto md:mx-0">
+                            Motivated B.Tech student with hands-on experience in Python, Java, C++, and strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and Database Management.
+                        </p>
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">Get In Touch</a>
+                            <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-20 bg-white section-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+                <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto text-center">
+                    I’m a Computer Science and Engineering student with a strong foundation in Python, Java, C++, and web development. I enjoy applying my knowledge of data structures & algorithms, object-oriented programming, and databases to build real-world solutions. Some of my key projects include a Java-based consultancy platform and a personal portfolio website designed with modern web technologies. Alongside development, I actively practice problem-solving on LeetCode and Codeforces to strengthen my algorithmic skills. I’m passionate about full-stack development, open-source contributions, and software engineering, and always eager to learn and build impactful solutions.
+                </p>
+            </div>
+        </section>
+        <section id="skills" class="py-20 bg-gray-50 section-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Technical Skills</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover-lift" aria-label="Programming Languages">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Programming Languages</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover-lift" aria-label="Web Development">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Web Development</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React.js</li>
+                            <li>Node.js, Express.js</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover-lift" aria-label="Databases & Tools">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Databases & Tools</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>SQL, MySQL, MongoDB</li>
+                            <li>Git, GitHub, Agile</li>
+                            <li>Visual Studio Code, Eclipse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="py-20 bg-white section-border">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Projects</h2>
+                <div class="space-y-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover-lift" aria-label="Consultancy Site (Java)">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Consultancy Site (Java)</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built a desktop-based consultancy platform integrating company listings, website redirection, and paid service promotions; implemented modular design and database connectivity.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover-lift" aria-label="Portfolio Website (HTML, CSS, JavaScript)">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Portfolio Website (HTML, CSS, JavaScript)</h3>
+                        <p class="text-gray-600 mb-4">
+                            Designed and deployed a personal portfolio showcasing projects and technical skills, optimized for responsive design and SEO.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="py-20 bg-gray-50 section-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Education</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-lift max-w-3xl mx-auto text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Bachelor of Technology (B.Tech), Computer Science and Engineering</h3>
+                    <p class="text-gray-600 mb-1">Maharaja Agrasen Institute of Technology, Rohini</p>
+                    <p class="text-gray-500 mb-4">2023 – 2027 (Pursuing)</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="py-20 bg-white section-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Achievements</h2>
+                <ul class="list-disc list-inside text-gray-700 max-w-3xl mx-auto space-y-4 text-lg">
+                    <li>Solved 500+ problems on LeetCode & Codeforces, improving algorithmic efficiency.</li>
+                    <li>Active contributor to GitHub open-source projects.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="interests" class="py-20 bg-gray-50 section-border">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Interests</h2>
+                <p class="text-gray-700 text-center max-w-3xl mx-auto text-lg">
+                    Full-stack development, open-source contributions, software engineering, and data analysis.
+                </p>
+            </div>
+        </section>
+        <section id="contact" class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+                <p class="text-xl mb-8">Feel free to reach out for internships or entry-level software development roles.</p>
+                <div class="space-y-4 max-w-md mx-auto text-left">
+                    <p><strong>Email:</strong> <a href="mailto:arjit486480@gmail.com" class="underline hover:text-blue-300">arjit486480@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919818325116" class="underline hover:text-blue-300">+91 - 9818325116</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/arjit-singh-8052a1317" class="underline hover:text-blue-300" target="_blank" rel="noopener noreferrer">linkedin.com/in/arjit-singh-8052a1317</a></p>
+                    <p><strong>Location:</strong> Preet Vihar, Delhi</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 Arjit Singh. All rights reserved.</p>
+            <p class="text-gray-400 mt-2">Built with passion and attention to detail.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+                if (!mobileMenu.classList.contains("hidden")) {
+                    mobileMenu.classList.add("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
